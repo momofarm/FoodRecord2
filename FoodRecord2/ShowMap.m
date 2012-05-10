@@ -61,6 +61,9 @@
     centerCoordinateOrig.latitude = centerCoordinate.latitude;
     centerCoordinateOrig.longitude = centerCoordinate.longitude;
     
+    
+    //afof
+    
     // Do any additional setup after loading the view from its nib.
 }
 
