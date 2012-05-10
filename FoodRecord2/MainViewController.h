@@ -15,5 +15,8 @@
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 - (IBAction)showInfo:(id)sender;
+- (IBAction)searchFood:(id)sender;
+- (IBAction)recordFood:(id)sender;
+- (IBAction)suggest:(id)sender;
 
 @end
