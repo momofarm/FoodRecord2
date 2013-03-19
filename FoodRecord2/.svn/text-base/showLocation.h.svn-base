@@ -33,7 +33,7 @@
     NSString *strText;
     UIImage *img;
     
-    __weak SaveLocs *saveDatas;
+    __weak SaveLocs *saveData;
 }
 
 - (UIImage *)getCurrentLocShot;
@@ -69,6 +69,6 @@
 @property (strong, nonatomic) UIImage *img;
 @property (assign, nonatomic) BOOL bPreset; 
 @property (assign, nonatomic) BOOL bDidChange;
-@property (weak) SaveLocs *saveDatas;
+@property (weak) SaveLocs *saveData;
 
 @end

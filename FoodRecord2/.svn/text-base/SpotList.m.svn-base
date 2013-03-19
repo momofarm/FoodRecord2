@@ -280,7 +280,7 @@
         
         loc.bPreset = YES;
         
-        loc.saveDatas = save;
+        loc.saveData = save;
         
         UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:loc];
         

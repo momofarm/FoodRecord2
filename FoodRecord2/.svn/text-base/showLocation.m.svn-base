@@ -30,7 +30,7 @@
 @synthesize img;
 @synthesize bPreset;
 @synthesize bDidChange;
-@synthesize saveDatas;
+@synthesize saveData;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -540,19 +540,19 @@
     
     bDidChange = YES;
     
-    saveDatas.name = storeNameField.text;
+    saveData.name = storeNameField.text;
     
-    saveDatas.note = textView.text;
+    saveData.note = textView.text;
     
     NSData *imgData = UIImagePNGRepresentation(imgView.image);
     
     NSString *base64ImgStr = [imgData base64EncodedString];
     
-    saveDatas.picofbase64 = base64ImgStr;
+    saveData.picofbase64 = base64ImgStr;
     
-    saveDatas.lat = [NSNumber numberWithDouble:newLat];
+    saveData.lat = [NSNumber numberWithDouble:newLat];
     
-    saveDatas.lon = [NSNumber numberWithDouble:newLon];
+    saveData.lon = [NSNumber numberWithDouble:newLon];
     
     AppDelegate *delegate = [[UIApplication sharedApplication] delegate];
     
